@@ -1,1 +1,14 @@
+## v3.1 - 2026-09-23
+- Redesigned the About screen to match the other Belimo sales tools: it now shows the version and date, an internal-use notice, the disclaimer, and who maintains the tool.
+- Added a "Download User Manual" button to the About screen.
+- Replaced the eMail Support icon on the Calculator with a "Report a Bug or Give Feedback" button.
+- Switching the display language while "Remember my language" is on no longer wipes your inputs without asking - you're now asked first, and can keep your work.
+- The Close Tool button now closes only this tool; Excel itself is closed only when nothing else is open.
+- Error logs are now written to your Windows temp folder, so problems are recorded on every machine.
+- Fixed the "Add to Summary" button silently misaligning columns if the calculation data ever changed shape, and a few other small robustness fixes.
 
+## v3.0 - 2026-09-15
+- Redesigned how updates are installed: you now choose where to save the new version yourself through a standard Save As dialog, just like saving any other file - no more hidden install folder or Desktop shortcut to manage.
+- Added a "Download Fresh Copy" button on the About screen. Use it any time you want a clean copy of the currently published version, even if the tool thinks you're already up to date.
+- Fixed a couple of issues where update messages could show up blank or with garbled text instead of the intended wording.
+- The About screen's info button is now easier to recognize and no longer sits next to the valve diagram, where it looked like a help button for the picture.
