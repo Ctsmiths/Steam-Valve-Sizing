@@ -1,3 +1,16 @@
+## v3.3 - 2026-09-24
+- Corrected the choked-flow sizing. When the outlet pressure is at or below about 58% of the inlet (absolute), the tool now uses the standard critical-flow relationship, in which flow depends on inlet pressure only. Before, it asked for 1.6 to 2 times the Cv it should at typical HVAC steam pressures (for example 28 psig to 5 psig at 293 lb/hr: 6.93, now 4.24) and under-sized above about 115 psia. Results agree with the Watson McDaniel and Spirax Sarco sizing calculators to within about 2%, and the required Cv no longer jumps at the choke point.
+- The required Cv for non-choked (subcritical) conditions is unchanged. The check of whether a valve can pass the design flow used the same too-low choked capacity, so at some lower inlet pressures the tool suggested a valve larger than needed; that is corrected too.
+- The corrected flow output and the on-screen formulas use the same relationship.
+- Added seven new help (?) icons on the results side of the Calculator, in English, Spanish, Portuguese and French: Flow Coefficient Result, the Selected Valve panel, Flow Regime, Required / Difference / Margin, Target Velocity, Suggested Valve Size & Cv, and Valve Travel %. They explain what each result means, why a large Cv margin is not necessarily a problem, and that Valve Travel % is an estimate from a generic equal-percentage curve.
+- When the Suggested Valve differs from the valve chosen in the Valve Selection box, a note under the Suggested Valve panel now says why (for example, the closest-match valve fails the valve-port velocity limit, with its velocity against the limit, and which valve passes). Available in all four languages.
+
+## v3.2 - 2026-09-24
+- Standard admin keys, the same in every Belimo tool: F12 asks for the admin password and then shows and unprotects every sheet; F11 puts every sheet back exactly as it was.
+- One password now protects every sheet in every tool.
+- Corrected the unit labels beside the pressure results (they read "guage" and lost a closing bracket) and two spelling mistakes in the help text.
+- The warning shown when you save a language preference is now translated into Spanish, Portuguese and French.
+
 ## v3.1 - 2026-09-23
 - Redesigned the About screen to match the other Belimo sales tools: it now shows the version and date, an internal-use notice, the disclaimer, and who maintains the tool.
 - Added a "Download User Manual" button to the About screen.
