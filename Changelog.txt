@@ -1,3 +1,8 @@
+## v3.4 - 2026-09-24
+- You are now told when a newer version exists: when you open the tool, a message offers to install it (Yes downloads and installs it, No carries on). You are asked only once for each new version; Check for Updates on the About screen is always there.
+- Fixed: on a PC whose regional settings use a comma for decimals (for example Spanish, Portuguese or French), Check for Updates could keep offering the version you already had.
+- Removed an unused link to Microsoft Outlook's programming library. On a PC without the classic Outlook installed it could stop the tool's buttons from working. E-mailing a summary still uses Outlook when it is there.
+
 ## v3.3 - 2026-09-24
 - Corrected the choked-flow sizing. When the outlet pressure is at or below about 58% of the inlet (absolute), the tool now uses the standard critical-flow relationship, in which flow depends on inlet pressure only. Before, it asked for 1.6 to 2 times the Cv it should at typical HVAC steam pressures (for example 28 psig to 5 psig at 293 lb/hr: 6.93, now 4.24) and under-sized above about 115 psia. Results agree with the Watson McDaniel and Spirax Sarco sizing calculators to within about 2%, and the required Cv no longer jumps at the choke point.
 - The required Cv for non-choked (subcritical) conditions is unchanged. The check of whether a valve can pass the design flow used the same too-low choked capacity, so at some lower inlet pressures the tool suggested a valve larger than needed; that is corrected too.
