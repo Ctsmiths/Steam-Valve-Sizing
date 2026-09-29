@@ -1,3 +1,12 @@
+## v3.5 - 2026-09-26
+- Checked against Spirax Sarco, IEC and Watson McDaniel: noise follows IEC 60534-8-3:2010 (read 13-22 dB high), outlet velocity uses the steam's state after the valve (read up to 11% low), US barometric pressures use each state's largest city.
+- Recommended Valve (was "Suggested"): the smallest pressure-rated valve with the required Cv that passes the velocity limit, at most 3x the Cv.
+- New: the Selected valve's outlet velocity and noise, with help on what high values mean.
+- 1/3 - 2/3 sheet: pick the valve to analyze (Recommended or Selected); a split pair only when your minimum flow needs it.
+- Valve Travel % from Belimo's measured curves; steam table to 250 psig; the whole tool translated.
+- Fixed: pop-ups before a first Calculate; stale results when no valve is pressure-rated; BTU/HR flows over 1,000,000 rejected; Add to Summary after a language change.
+- What's New shows only the changes since your version.
+
 ## v3.4 - 2026-09-24
 - You are now told when a newer version exists: when you open the tool, a message offers to install it (Yes downloads and installs it, No carries on). You are asked only once for each new version; Check for Updates on the About screen is always there.
 - Fixed: on a PC whose regional settings use a comma for decimals (for example Spanish, Portuguese or French), Check for Updates could keep offering the version you already had.
